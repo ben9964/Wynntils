@@ -33,7 +33,7 @@ import org.lwjgl.glfw.GLFW;
 
 public class TradeMarketSearchResultHolder extends WrappedScreenHolder<TradeMarketSearchResultScreen> {
     // Patterns
-    private static final Pattern TITLE_PATTERN = Pattern.compile("Search Results");
+    private static final Pattern TITLE_PATTERN = Pattern.compile("§f\uDAFF\uDFE8\uE011");
     private static final Pattern PAGE_PATTERN = Pattern.compile("§f§lPage (\\d+)§a (:?[<>]§2[<>]§a)+[<>]");
 
     // Constants

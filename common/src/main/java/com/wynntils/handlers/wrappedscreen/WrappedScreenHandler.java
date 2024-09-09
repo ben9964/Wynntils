@@ -31,6 +31,7 @@ public class WrappedScreenHandler extends Handler {
         if (!(McUtils.mc().screen instanceof AbstractContainerScreen<?> abstractContainerScreen)) return;
 
         StyledText titleStyledText = StyledText.fromComponent(abstractContainerScreen.getTitle());
+        System.out.println(abstractContainerScreen.getTitle());
 
         // If we opened a new screen, reset the current wrapped screen
         resetWrappedScreen(false);
