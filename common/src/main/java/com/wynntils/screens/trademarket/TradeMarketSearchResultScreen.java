@@ -5,6 +5,7 @@
 package com.wynntils.screens.trademarket;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.wynntils.core.WynntilsMod;
 import com.wynntils.core.components.Models;
 import com.wynntils.handlers.wrappedscreen.WrappedScreen;
 import com.wynntils.handlers.wrappedscreen.type.WrappedScreenInfo;
@@ -83,8 +84,9 @@ public class TradeMarketSearchResultScreen extends WynntilsContainerScreen<Chest
 
         // This is screen.topPos and screen.leftPos, but they are not calculated yet when this is called
         int renderX = (width - imageWidth) / 2;
-        int renderY = (height - imageHeight) / 2 - 22;
+        int renderY = ((height - imageHeight) / 2 - 22) + 500;
 
+        WynntilsMod.info("Creating Trade Market Search Result Screen at x: " + renderX + ", y: " + renderY);
         itemSearchWidget = new ItemSearchWidget(
                 renderX,
                 renderY,
